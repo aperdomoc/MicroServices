@@ -1,0 +1,19 @@
+# Component Info
+info:
+  component: SpringConfig-Server
+  
+#HTTP server
+server:
+  port: 8888
+
+spring:
+  #spring cloud config server repository
+  cloud:
+    config:
+      server:
+        git: 
+          uri: https://github.com/aperdomoc/spring-configuration-server.git
+
+#Spring properties
+profiles:
+  active: dev
